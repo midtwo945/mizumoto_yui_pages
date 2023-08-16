@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>猜數字遊戲</title>
+</head>
+<body>
+    <h1>猜數字遊戲</h1>
+    <p>請猜一個從 1 到 100 的數字。</p>
+    <input type="number" id="guess" placeholder="輸入你的猜測">
+    <button onclick="checkGuess()">確定</button>
+    <p id="result"></p>
+
+    <script>
+        // 生成一個 1 到 100 的隨機數字
+        const targetNumber = Math.floor(Math.random() * 100) + 1;
+        let attempts = 0;
+
+        function checkGuess() {
+            const guess = parseInt(document.getElementById('guess').value);
+            attempts++;
+
+            if (guess === targetNumber) {
+                document.getElementById('result').textContent = `恭喜你猜對了！你用了 ${attempts} 次猜測。`;
+            } else if (guess < targetNumber) {
+                document.getElementById('result').textContent = '太小了，請再試一次。';
+            } else {
+                document.getElementById('result').textContent = '太大了，請再試一次。';
+            }
+        }
+    </script>
+</body>
+</html>
