@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>猜數字遊戲</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f5f5f5;
+            margin: 0;
+        }
+
+        h1 {
+            margin: 20px 0;
+        }
+
+        #guess {
+            padding: 5px;
+            font-size: 16px;
+        }
+
+        #result {
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        #play-again {
+            display: none;
+            margin-top: 10px;
+            cursor: pointer;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>猜數字遊戲</h1>
+    <p>請猜一個從 1 到 100 的數字。</p>
+    <input type="number" id="guess" placeholder="輸入你的猜測">
+    <button id="checkBtn">確定</button>
+    <p id="result"></p>
+    <p id="play-again">再玩一次</p>
+
+    <script>
+        const targetNumber = Math.floor(Math.random() * 100) + 1;
+        let attempts = 0;
+
+        const guessInput = document.getElementById('guess');
+        const checkBtn = document.getElementById('checkBtn');
+        const result = document.getElementById('result');
+        const playAgain = document.getElementById('play-again');
+
+        function checkGuess() {
+            const guess = parseInt(guessInput.value);
+            attempts++;
+
+            if (guess === targetNumber) {
+                result.textContent = `恭喜你猜對了！你用了 ${attempts} 次猜測。`;
+                playAgain.style.display = 'block';
+            } else if (guess < targetNumber) {
+                result.textContent = '太小了，請再試一次。';
+            } else {
+                result.textContent = '太大了，請再試一次。';
+            }
+        }
+
+        checkBtn.addEventListener('click', checkGuess);
+        playAgain.addEventListener('click', () => {
+            targetNumber = Math.floor(Math.random() * 100) + 1;
+            attempts = 0;
+            result.textContent = '';
+            guessInput.value = '';
+            playAgain.style.display = 'none';
+        });
+    </script>
+</body>
+</html>
