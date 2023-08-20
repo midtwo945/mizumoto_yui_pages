@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Future Store未來商店</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        html,body{
+
+          height:100%;
+        }
+        #a1,#a2,#a3,#a4,#a5{
+          height:100%;
+          background-size: cover;
+          background-position: center center;
+          background-attachment: fixed;
+         
+        }
+        .cen{
+            text-align:center;
+            padding:15;
+            border-radius: 30px;
+            background-color: rgba(255, 255, 255, 0.6);
+        }
+        .mybtn{
+            color: black;
+            border: aqua ;
+            background-color: aqua;
+            display: none;
+            position: fixed;
+            top:70px;
+            right:0px;
+        }
+        .carousel,.carousel-inner,.carousel-item{
+            height: 100%;
+        }
+        .carousel-indicators li{
+            width: 10px;
+            height: 10px;
+            border-radius: 100%;
+        }
+        .fill{
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  </head>
+  <body  style="padding-top: 50px;">
+
+
+
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="index.html"><img src="img/logo.png" width=50 height=50>Future Store</a>
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav m-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="p1.asp" >電腦</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="p2.asp" >家機</a>
+                   
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="p3.asp">遊戲</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="p4.asp">關於我們</a>
+                </li>
+            </ul>
+            <div style="width:220px;"></div>
+        
+        </div>
+    </nav>
+    <!--輪播-->
+    <div id="carouselId" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselId" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselId" data-slide-to="1"></li>
+            <li data-target="#carouselId" data-slide-to="2"></li>
+            <li data-target="#carouselId" data-slide-to="3"></li>
+            <li data-target="#carouselId" data-slide-to="4"></li>
+            <li data-target="#carouselId" data-slide-to="5"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active">
+                <div class="fill" style="background-image: url(img/rog.jpg);"></div>
+                <div class="carousel-caption d-none d-md-block">
+                    <h3>ASUS</h3>
+                    <p>華碩科技</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="fill" style="background-image: url(img/PS4.jpg);"></div>
+                <div class="carousel-caption d-none d-md-block">
+                    <h3>Sony索尼</h3>
+                    <p>PS4</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="fill" style="background-image: url(img/xbox-series.jpg);"></div>
+                <div class="carousel-caption d-none d-md-block">
+                    <h3>Microsoft微軟</h3>
+                    <p>X box series X</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="fill" style="background-image: url(img/SW.jpg);"></div>
+                <div class="carousel-caption d-none d-md-block">
+                    <h3>Nintendo任天堂</h3>
+                    <p>Switch</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="fill" style="background-image: url(img/MSI.jpg);"></div>
+                <div class="carousel-caption d-none d-md-block">
+                    <h3>MSI</h3>
+                    <p>微星科技</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="fill" style="background-image: url(img/ACER.jpg);"></div>
+                <div class="carousel-caption d-none d-md-block">
+                    <h3>acer</h3>
+                    <p>宏碁科技</p>
+                </div>
+            </div>
+        
+        <a class="carousel-control-prev" href="#carouselId" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselId" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    <a class="btn btn-primary mybtn js-scroll-trigger scroll-to-top" href="#a1" role="button">TOP</a>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/popper.min.js" ></script>
+    <script src="js/bootstrap.min.js" ></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/freelancer.min.js"></script>
+    <script>
+        //設定播放速度
+        $('.carousel').carousel({ interval:5000 }); 
+        //開始輪播
+        $(".start-slide").click(function(){
+                $("#carouselId").carousel('cycle');
+            });
+            // 停止播放
+            $(".pause-slide").click(function(){
+                $("#carouselId").carousel('pause');
+            });
+            // 播放上一個
+            $(".prev-slide").click(function(){
+                $("#carouselId").carousel('prev');
+            });
+            // 播放下一個
+            $(".next-slide").click(function(){
+                $("#carouselId").carousel('next');
+            });
+            // 播放至指定編號內容 
+            $(".slide-one").click(function(){
+                $("#carouselId").carousel(0);
+            });
+            $(".slide-two").click(function(){
+                $("#carouselId").carousel(1);
+            });
+            $(".slide-three").click(function(){
+                $("#carouselId").carousel(2);
+            });
+       </script>
+  </body>
+  
+</html>
