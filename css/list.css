@@ -1,0 +1,10 @@
+/* 產品圖片 */
+.pimg{
+	width:100%;
+	height:250px;
+	background-size: cover;
+	background-position: center;
+}
+.card{
+	cursor: pointer;
+}
