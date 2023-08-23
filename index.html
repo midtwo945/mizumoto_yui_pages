@@ -38,9 +38,52 @@
             text-align: center;
             padding: 10px;
         }
+
+         nav {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+        }
+
+        nav ul {
+            list-style: none;
+            text-align: center;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        /* 新增響應式調整 */
+        @media screen and (max-width: 768px) {
+            nav ul {
+                display: flex;
+                flex-direction: column;
+            }
+
+            nav ul li {
+                margin: 10px 0;
+            }
+        }
     </style>
 </head>
 <body>
+    <nav>
+        <ul>
+            <li><a href="#">首頁</a></li>
+            <li><a href="#">遊戲</a></li>
+            <li><a href="#">關於我們</a></li>
+            <li><a href="#">聯絡我們</a></li>
+        </ul>
+    </nav>
+    
     <header>
         <h1>歡迎來到沅沅的遊戲網站</h1>
         <p>探索各種有趣的遊戲，享受遊戲的樂趣！</p>
