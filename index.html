@@ -14,7 +14,7 @@
             background-color: #333;
             color: #fff;
             text-align: center;
-            padding: 15px;
+            padding: 10px;
         }
 
         .container {
@@ -60,6 +60,9 @@
         nav ul li a {
             text-decoration: none;
             color: #fff;
+            
+        nav ul li a:hover {
+            text-decoration: underline;
         }
 
         /* 新增響應式調整 */
@@ -76,7 +79,7 @@
     </header>
 
     <nav>
-        <ul id="cd-navigation">
+        <ul>
             <li><a href="#">首頁</a></li>
             <li><a href="#">遊戲</a></li>
             <li><a href="#">關於我們</a></li>
@@ -91,6 +94,11 @@
             <a href="guess_number_game.html">開始遊戲</a>
         </div>
 
+        <div class="game-card">
+            <h2>猜數字遊戲</h2>
+            <p>在這個經典的猜數字遊戲中，挑戰自己的數字猜測能力。</p>
+            <a href="guess_number_game.html">開始遊戲</a>
+        </div>
         <!-- 添加更多遊戲卡片 -->
 
     </div>
@@ -99,13 +107,5 @@
         <p>&copy; 2023 遊戲網站. All rights reserved.</p>
     </footer>
     
-    <script>
-        const navTrigger = document.querySelector('.nav-trigger');
-        const navigation = document.querySelector('#cd-navigation');
-
-        navTrigger.addEventListener('click', () => {
-            navigation.classList.toggle('show');
-        });
-    </script>
 </body>
 </html>
