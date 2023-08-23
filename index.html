@@ -64,65 +64,7 @@
 
         /* 新增響應式調整 */
         @media screen and (max-width: 768px) {
-            nav ul {
-                display: flex;
-                flex-direction: column;
-                position: absolute;
-                top: 50px;
-                left: 0;
-                right: 0;
-                background-color: #333;
-                text-align: center;
-                display: none;
-            }
-
-        nav ul.show {
-                display: block;
-            }
-    
-        nav ul li {
-                margin: 10px 0;
-            }
-
-        .menu-trigger {
-                display: block;
-                text-align: center;
-                padding: 10px;
-                background-color: #444;
-                color: #fff;
-                cursor: pointer;
-            }
-
-        .menu-list {
-                display: none;
-            }
-
-        .menu-list.show {
-                display: block;
-                text-align: center;
-                background-color: #333;
-                padding: 10px 0;
-            }
-
-        .menu-list a {
-                color: #fff;
-                text-decoration: none;
-                display: block;
-                padding: 5px;
-            }     
-        }
-
-        .nav-trigger {
-                display: none;
-                position: absolute;
-                top: 20px;
-                right: 20px;
-                cursor: pointer;
-                color: #fff;
-        }
-
-        .nav-trigger em {
-                display: block;
+            
         }
     </style>
     
@@ -135,27 +77,12 @@
     </header>
 
     <nav>
-        <a href="#cd-navigation" class="nav-trigger">
-            <span>
-                <em aria-hidden="true"></em>
-                Menu
-            </span>
-        </a>
         <ul id="cd-navigation">
             <li><a href="#">首頁</a></li>
             <li><a href="#">遊戲</a></li>
             <li><a href="#">關於我們</a></li>
             <li><a href="#">聯絡我們</a></li>
         </ul>
-        <div class="menu">
-            <a href="#" class="menu-trigger">Menu</a>
-            <ul class="menu-list">
-                <li><a href="#">首頁</a></li>
-                <li><a href="#">遊戲</a></li>
-                <li><a href="#">關於我們</a></li>
-                <li><a href="#">聯絡我們</a></li>
-            </ul>
-        </div>
     </nav>
 
     <div class="container">
