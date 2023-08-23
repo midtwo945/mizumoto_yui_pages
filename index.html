@@ -39,7 +39,8 @@
             padding: 10px;
         }
 
-         nav {
+        /* 新增導航欄樣式 */
+        nav {
             background-color: #333;
             color: #fff;
             padding: 10px 0;
@@ -66,15 +67,45 @@
             nav ul {
                 display: flex;
                 flex-direction: column;
+                position: absolute;
+                top: 50px;
+                left: 0;
+                right: 0;
+                background-color: #333;
+                text-align: center;
+                display: none;
             }
 
-            nav ul li {
-                margin: 10px 0;
+        nav ul.show {
+            display: block;
             }
+    
+        nav ul li {
+            margin: 10px 0;
+            }
+        }
+
+        .nav-trigger {
+            display: none;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            cursor: pointer;
+            color: #fff;
+        }
+
+        .nav-trigger em {
+            display: block;
         }
     </style>
 </head>
 <body>
+    
+    <header>
+        <h1>歡迎來到沅沅的遊戲網站</h1>
+        <p>探索各種有趣的遊戲，享受遊戲的樂趣！</p>
+    </header>
+
     <nav>
         <ul>
             <li><a href="#">首頁</a></li>
@@ -83,11 +114,6 @@
             <li><a href="#">聯絡我們</a></li>
         </ul>
     </nav>
-    
-    <header>
-        <h1>歡迎來到沅沅的遊戲網站</h1>
-        <p>探索各種有趣的遊戲，享受遊戲的樂趣！</p>
-    </header>
 
     <div class="container">
         <div class="game-card">
@@ -103,5 +129,14 @@
     <footer>
         <p>&copy; 2023 遊戲網站. All rights reserved.</p>
     </footer>
+    
+    <script>
+        const navTrigger = document.querySelector('.nav-trigger');
+        const navigation = document.querySelector('#cd-navigation');
+
+        navTrigger.addEventListener('click', () => {
+            navigation.classList.toggle('show');
+        });
+    </script>
 </body>
 </html>
