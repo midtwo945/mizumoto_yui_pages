@@ -77,27 +77,55 @@
             }
 
         nav ul.show {
-            display: block;
+                display: block;
             }
     
         nav ul li {
-            margin: 10px 0;
+                margin: 10px 0;
             }
+
+        .menu-trigger {
+                display: block;
+                text-align: center;
+                padding: 10px;
+                background-color: #444;
+                color: #fff;
+                cursor: pointer;
+            }
+
+        .menu-list {
+                display: none;
+            }
+
+        .menu-list.show {
+                display: block;
+                text-align: center;
+                background-color: #333;
+                padding: 10px 0;
+            }
+
+        .menu-list a {
+                color: #fff;
+                text-decoration: none;
+                display: block;
+                padding: 5px;
+            }     
         }
 
         .nav-trigger {
-            display: none;
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            cursor: pointer;
-            color: #fff;
+                display: none;
+                position: absolute;
+                top: 20px;
+                right: 20px;
+                cursor: pointer;
+                color: #fff;
         }
 
         .nav-trigger em {
-            display: block;
+                display: block;
         }
     </style>
+    
 </head>
 <body>
     
