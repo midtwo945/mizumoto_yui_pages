@@ -25,12 +25,16 @@
             font-size: 18px;
             font-weight: bold;
         }
-
+        
+        #play-again-container {
+            text-align: center;
+            margin-top: 10px;
+        }
+        
         #play-again {
             display: none;
-            margin-top: 10px;
             cursor: pointer;
-            color: blue;
+            color: black;
         }
     </style>
 </head>
@@ -39,8 +43,12 @@
     <p>請猜一個從 1 到 100 的數字。</p>
     <input type="number" id="guess" placeholder="輸入你的猜測">
     <button id="checkBtn">確定</button>
+    
     <p id="result"></p>
-    <button id="play-again" style="display: none;">再玩一次</button>
+    
+    <div id="play-again-container" style="display: none; text-align: center;">
+        <button id="play-again">再玩一次</button>
+    </div>
 
     <script>
         let targetNumber = Math.floor(Math.random() * 100) + 1;
