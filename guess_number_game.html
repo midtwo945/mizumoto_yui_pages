@@ -65,19 +65,19 @@
 
             if (guess === targetNumber) {
                 result.textContent = `恭喜你猜對了！你用了 ${attempts} 次猜測。`;
-                result.classList.add('animate__animated', 'animate__bounceIn');
+                result.classList.add('animate__animated', 'animate__fadeIn');
                 playAgain.style.display = 'block';
             } else if (guess < targetNumber) {
                 result.textContent = '太小了，請再試一次。';
-                result.classList.add('animate__animated', 'animate__shakeX');
+                result.classList.add('animate__animated', 'animate__headShake');
             } else {
                 result.textContent = '太大了，請再試一次。';
-                result.classList.add('animate__animated', 'animate__shakeX');
+                result.classList.add('animate__animated', 'animate__headShake');
             }
         }
         result.addEventListener('animationend', () => {
-            result.classList.remove('animate__animated', 'animate__shakeX');
-            result.classList.remove('animate__animated', 'animate__bounceIn');
+            result.classList.remove('animate__animated', 'animate__headShake');
+            result.classList.remove('animate__animated', 'animate__fadeIn');
         });
 
         checkBtn.addEventListener('click', checkGuess);
