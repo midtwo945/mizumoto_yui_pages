@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fafafa;
+}
+
+.game-card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.btn-chinese {
+    width: 70px; /* 設定中文按鈕的寬度 */
+}
+
+footer {
+    background-color: #212529; 
+    color: #fff;
+}
+
+.container-footer{
+    background-color: #212529;
+    padding: 0 25%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+}
+/* 新增導航欄樣式 */
+nav {
+    background-color: #212529;
+    text-align: center;
+}
+
+.navbar-nav {
+    margin: 0 auto; /* 文字置中 */
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.my-link,.navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+    text-decoration: none;
+}
+
+.my-link:hover,.navbar-nav .nav-link:hover {
+    color: rgb(0, 200, 255);
+}
+
+.my-link:active,.navbar-nav .nav-link:active {
+    color: rgb(0, 100, 255);
+}
