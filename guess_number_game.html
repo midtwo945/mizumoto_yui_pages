@@ -27,7 +27,9 @@
         }
         
         #play-again-container {
+            display: flex;
             text-align: center;
+            justify-content: center;
             margin-top: 10px;
         }
         
@@ -46,7 +48,7 @@
     
     <p id="result"></p>
     
-    <div id="play-again-container" style="display: none; text-align: center;">
+    <div id="play-again-container">
         <button id="play-again">再玩一次</button>
     </div>
 
@@ -65,8 +67,9 @@
 
             if (guess === targetNumber) {
                 result.textContent = `恭喜你猜對了！你用了 ${attempts} 次猜測。`;
-                result.classList.add('animate__animated', 'animate__fadeIn');
                 playAgain.style.display = 'block';
+                result.classList.add('animate__animated', 'animate__fadeIn');
+                
             } else if (guess < targetNumber) {
                 result.textContent = '太小了，請再試一次。';
                 result.classList.add('animate__animated', 'animate__headShake');
